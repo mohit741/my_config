@@ -1,0 +1,63 @@
+# For reference https://openedx.atlassian.net/wiki/spaces/LEARNER/pages/48792067/App+Configuration+Flags
+
+# Core
+
+API_HOST_URL : 'http://www.mohitkv.codes'
+
+ENVIRONMENT_DISPLAY_NAME : 'midhafin'
+PLATFORM_NAME : 'MidhaFin'
+PLATFORM_DESTINATION_NAME: 'www.mohitkv.codes'
+ORGANIZATION_CODE : 'MidhaFin'
+
+FEEDBACK_EMAIL_ADDRESS: 'mohit.verma741@gmail.com'
+
+API_URL_VERSION: 
+        BLOCKS: 'v1'
+
+# Features
+
+DISCOVERY:
+    COURSE:
+        TYPE: 'webview'
+        WEBVIEW:
+            SUBJECT_FILTER_ENABLED: true
+            BASE_URL: 'http://www.mohitkv.codes/courses'
+            DETAIL_TEMPLATE: 'http://www.mohitkv.codes/courses/{path_id}/about'
+            SEARCH_ENABLED: true
+            SUBJECT_DISCOVERY_ENABLED: true
+
+PROGRAM:
+        ENABLED: false
+
+ANNOUNCEMENTS_ENABLED: true
+BADGES_ENABLED: false
+CERTIFICATES_ENABLED: true
+COURSE_DATES_ENABLED: true
+COURSE_SHARING_ENABLED: true
+COURSE_VIDEOS_ENABLED: true
+DISCUSSIONS_ENABLED: true
+DISCUSSIONS_ENABLE_PROFILE_PICTURE_PARAM: false
+PUSH_NOTIFICATIONS: false
+NEW_LOGISTRATION_ENABLED: true
+REGISTRATION_ENABLED: true
+TAB_LAYOUTS_ENABLED: true
+USER_PROFILES_ENABLED: true
+VIDEO_TRANSCRIPT_ENABLED: true
+WHATS_NEW_ENABLED: true
+
+# Third Party
+
+FABRIC:
+    ENABLED: false
+    FABRIC_KEY: 'YOUR_FABRIC_KEY'
+    FABRIC_BUILD_SECRET: 'YOUR_FABRIC_BUILD_SECRET'
+    KITS:
+        CRASHLYTICS: false
+        ANSWERS: false
+
+TWITTER:
+    HASHTAG: '@your_twitter_handle'
+
+FACEBOOK:
+    ENABLED: false
+    FACEBOOK_APP_ID: 'FB_APP_ID_GOES_HERE'
